@@ -1,0 +1,699 @@
+/*
+   Delight Front-end Framework
+*/
+
+/************************/
+/* RESET ALL THE THINGS */
+/************************/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, cite, code, em, img, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/**************/
+/* BOX SIZING */
+/**************/
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*****************/
+/* CURSOR RESETS */
+/*****************/
+a, label, button, input[type="radio"], input[type="submit"], input[type="checkbox"], input[type="button"] {
+	cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+	cursor: default;
+}
+
+/*****************/
+/* SET DISPLAY-ROLE FOR HTML5 ELEMENTS */
+/*****************/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*****************/
+/* NORMALIZE BOLD and ITALIC STYLES */
+/*****************/
+em, i {
+	font-style: italic;
+	line-height: inherit;
+}
+
+strong, b {
+	font-weight: bold;
+	line-height: inherit;
+}
+
+/*****************/
+/* MAKE IMG and MEDIA RESPONSIVE BY DEFAULT */
+/*****************/
+img, object, embed {
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*****************/
+/* Fixes Firefox bug  */
+/* https://bugzilla.mozilla.org/show_bug.cgi?id=140562 */
+/*****************/
+::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+/*****************/
+/* OTHER STUFF FOR HTML and BODY */
+/*****************/
+html {
+	overflow-y: scroll; /* Force vertical scrollbar to prevent jumpy pages */
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	line-height: 1;
+	font-family: sans-serif; /* looks nicer */
+}
+
+/*
+   VARIABLES
+   Add your variables to the :root selector.
+   Then reference them in your other css modules like so
+
+   :root {
+      --spacing-small: 32px;
+   }
+
+   .someClass {
+     padding: var(--spacing-small)
+   }
+
+*/
+
+:root {
+	/* Colors */
+
+	/* Grayscale */
+
+	/* Font-Family */
+
+	/* Sizing: Baseline is 24; */
+
+	/* Dimensions */
+
+	/* Borders */
+
+	/* Animation */
+
+	/* Media Query variables */
+}
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+/*
+
+  These breakpoints can be extended or modified to your hearts content
+
+  You can use like this:
+
+  @media (--breakpoint-medium-and-up) {
+      Your breakpoint styles here.
+      Don't forget to make them mobile first :)
+  }
+
+*/
+
+
+/* USING MEDIA QUERIES */
+/* Medium and Up - Targets everything larger than mobile
+   ========================================================================== */
+@media screen and (min-width: 32em) {
+
+}
+/* Medium - only targets 1st breakpoint. Styles
+   ========================================================================== */
+@media screen and (min-width: 32em) and (max-width: 64em) {
+
+}
+/* Large - only targets 2nd breakpoint.
+   ========================================================================== */
+@media screen and (min-width: 64em) {
+
+}
+.is-no-padding {
+	padding: 0 !important;
+}
+	.is-no-padding-left {
+		padding-left: 0 !important;
+	}
+	.is-no-padding-right {
+		padding-right: 0 !important;
+	}
+	.is-no-padding-top {
+		padding-top: 0 !important;
+	}
+	.is-no-padding-bottom {
+		padding-bottom: 0 !important;
+	}
+
+.is-no-margin {
+	margin: 0 !important;
+}
+	.is-no-margin-left {
+		margin-left: 0 !important;
+	}
+	.is-no-margin-right {
+		margin-right: 0 !important;
+	}
+	.is-no-margin-top {
+		margin-top: 0 !important;
+	}
+	.is-no-margin-bottom {
+		margin-bottom: 0 !important;
+	}
+
+/* backgrounds */
+.is-textured {
+	background-image: url("../images/texture-black.svg");
+}
+
+.is-delight-gradient {
+	background-color: $brand;
+	background: -webkit-linear-gradient(to right, #f6a824 , #ffcc33);
+	background: linear-gradient(to right, #f6a824 , #ffcc33);
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	background-color: #FFFFFF;
+	color: #212121;
+	font: normal 400 16px/1.5 "museo-sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background: #fff;
+}
+
+.block:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+h1:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+h2:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+h3:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+h4:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+h5:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+h6:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.content p:not(:last-child) {
+	margin-bottom: 24px;
+}
+h1 {
+	color: #292B33;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h2 {
+	color: #292B33;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h3 {
+	color: #292B33;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h4 {
+	color: #292B33;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h5 {
+	color: #292B33;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+h6 {
+	color: #292B33;
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+	text-rendering: optimizeLegibility;
+}
+
+/* 
+	Use these classes to apply type styles across the document
+*/
+.h1, .content h1, .hero-content .title {
+	font-size: 22px;
+	line-height: 1.1;
+}
+
+.h2, .content h2 {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.h3, .content h3, .hero-content .subtitle {
+	font-size: 19px;
+	line-height: 1.27;
+}
+
+.h4, .h5, .h6, .content h4, .content h5, .content h6 {
+	font-size: 18px;
+	line-height: 1.333;
+}
+
+@media screen and (min-width: 32em) {
+	.h1:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h2:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h3:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h4:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h5:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.h6:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h1:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h2:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h3:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h4:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h5:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.content h6:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.hero-content .title:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.hero-content .subtitle:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	.h1, .content h1, .hero-content .title {
+		font-size: 61.035px;
+		line-height: 1.181;
+	}
+
+	.h2, .content h2 {
+		font-size: 39.063px;
+		line-height: 1.24;
+	}
+
+	.h3, .h4, .h5, .h6, .content h3, .content h4, .content h5, .content h6, .hero-content .subtitle {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+}
+
+/***********/
+/* CONTENT */
+/***********/
+/* 
+	typographic styles are scoped to the .content class
+	this allows you to use the correct headers without worrying about styles
+*/
+
+.content p {
+
+	text-rendering: optimizeLegibility;
+}
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important; /* black prints faster */
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (' attr(href) ')";
+  }
+
+  abbr[title]:after {
+    content: " (' attr(title) ')";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: '';
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245 */
+  /* Once fixed, we can just straight up remove this. */
+  select, table, td, th {
+    background: #fff !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  .header {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   FLEXBOX-BASED GRID
+   ========================================================================== */
+/*
+	Use this grid to arrange items horizontally
+
+	On mobile, all .column elements are full-width.
+	Flexbox is activated on tablet screens and larger
+*/
+
+.column {
+	flex: 1;
+	padding: 12px;
+}
+
+@media screen and (min-width: 32em) {
+	/* activate flexbox grid on tablet and larger */
+	.columns {
+		display: flex;
+	}
+	/* grid modifiers */
+	.columns.is-centered {
+		justify-content: center;
+	}
+	.columns.is-multiline {
+		flex-wrap: wrap;
+	}
+	.columns.is-vcentered {
+		align-items: center;
+	}
+
+	.column {
+		padding: 24px;
+	}
+	/* column sizing */
+	.column.is-half {
+		width: 50%;
+		flex: none;
+	}
+
+	.column.is-third {
+		width: 33.3333%;
+		flex: none;
+	}
+
+	.column.is-quarter {
+		width: 25%;
+		flex: none;
+	}
+}
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+/*
+	Use sections to arrange the page vertically
+*/
+
+.section {
+	background: white;
+	padding: 24px 0;
+}
+
+/* adds border between adjacent sections */
+.section + .section {
+	border-top: 2px solid #f5f7fa;
+}
+
+@media screen and (min-width: 32em) {
+	.section {
+		padding: 48px 0;
+	}
+	.section.is-medium {
+		padding: 120px 0;
+	}
+	.section.is-large {
+		padding: 240px 0;
+	}
+}
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	padding-left: 24px;
+	padding-right: 24px;
+	width: 100%;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+
+.mw-500 {
+	max-width: 500px;
+	margin: 0 auto;
+}
+label {
+	display: block;
+	font-size: inherit;
+	margin-bottom: 12px;
+}
+input {
+	display: block;
+	font-size: inherit;
+	margin-bottom: 12px;
+}
+input[type="email"] {
+	border: 1px solid #d3d6db;
+	border-radius: 3px;
+	font-size: inherit;
+	padding: 6px;
+	outline: 0;
+	width: 100%;
+}
+input[type="email"]:focus {
+	border: 1px solid #6ea8c1;
+}
+
+input[type="submit"] {
+	background-color: #6ea8c1;
+	border: 1px solid #d3d6db;
+	border-radius: 3px;
+	color: #FFFFFF;
+	font-size: inherit;
+	padding: 12px 6px;
+	outline: 0;
+	transition: background-color 250ms;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: #619DB7;
+}
+
+input[type="submit"]:active {
+	background-color: #6ea8c1;
+	transform: translateY(1px);
+}
+
+input[type="submit"]:focus {
+	background-color: #619DB7;
+	border: 1px solid #FFFFFF;
+}
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
+/*
+  Long-gone are the days where all hyperlinks were blue, underlined and only wrapped inline content.)
+  This file resets the style of a link,
+  so that they can be used throughout the website without resetting styles everytime.
+
+  Links inside paragraph tags (body text) will still be styled like regular hyperlinks.
+  If hyperlink styles need to be reapplied, use the .link class.
+*/
+a {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: all 250ms ease;
+}
+
+p > a, .link {
+  color: #0069c6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+p > a:visited, .link:visited {
+	font-size: 100px;
+	color: #0069c6;
+}
+
+p > a:hover, .link:hover {
+	color: #7FDBFF;
+}
+
+p > a:focus, p > a:active, .link:focus, .link:active {
+	color: #195284;
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+.hero {
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.hero.is-left {
+	text-align: left;
+}
+.hero.is-right {
+	text-align: right;
+}
+
+.hero.is-fullheight {
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.hero.is-fullheight > .hero-content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media screen and (min-width: 32em) {
+	.hero.is-large > .hero-content {
+		padding: 240px 24px;
+	}
+	.hero.is-medium > .hero-content {
+		padding: 120px 24px;
+	}
+}
+
+.hero-content {
+	padding: 48px 24px;
+}
+
+@media screen and (min-width: 32em) {
+	.hero-content {
+		padding: 48px 0;
+	}
+}
+
+/* Background Colors */
+.hero.is-yellow {
+	background-color: #f6a824;
+}
+.hero.is-yellow .title {
+	color: #FFFFFF;
+}
+.hero.is-yellow .subtitle {
+	color: #212121;
+}
+.hero.is-blue {
+	background-color: #6ea8c1;
+}
+.hero.is-blue .title {
+	color: #FFFFFF;
+}
+.hero.is-blue .subtitle {
+	color: #FFFFFF;
+}
+/* ==========================================================================
+   TITLES
+   ========================================================================== */
+
+.hero-content .title {
+	font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, Times, "Times New Roman", serif;
+}
+.hero-content .subtitle {
+	font-family: "museo-sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}

@@ -1,0 +1,16 @@
+
+Use sections to separate content vertically
+Use grids to arrange things horizontally
+
+
+
+CHANGE THIS:
+p:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+TO THIS:
+.block:not(:last-child) {
+	margin-bottom: 24px;
+}
+@extend .block;

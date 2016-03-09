@@ -1,0 +1,14 @@
+html,
+body {
+	height: 100%;
+}
+body {
+	background-color: var(--white);
+	color: var(--black);
+	font: normal 400 16px/1.5 var(--body-font);
+	background: #fff;
+}
+
+.block:not(:last-child) {
+	margin-bottom: var(--size-md);
+}
